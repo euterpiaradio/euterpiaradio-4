@@ -1,0 +1,67 @@
+/*
+Theme Name: Euterpia Radio 4
+Theme URI: https://github.com/euterpiaradio/euterpiaradio-4
+Author: Yannick Mauray
+Author URI: https://frenchguy.ch/
+Description: Le 4ème thème WordPress pour le site d'Euterpia Radio
+Version: 1.0.0
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: er
+GitHub Theme URI: https://github.com/euterpiaradio/euterpiaradio-4
+GitHub Branch: master
+*/
+html {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 300;
+}
+*,
+*:before,
+*:after {
+  font-family: inherit;
+  font-weight: inherit;
+}
+.header-outter {
+  background-color: red;
+}
+.header-outter .header-inner {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-outter .header-inner .brand {
+  font-weight: 700;
+  font-size: 5rem;
+  margin: 1rem 0;
+}
+.header-outter .header-inner .links {
+  margin-bottom: 1rem;
+  display: flex;
+}
+.header-outter .header-inner .links div:first-child {
+  border-right: 1px solid;
+  padding-right: 1rem;
+  margin-right: 1rem;
+}
+.header-outter .header-inner .links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.header-outter .header-inner .links ul li {
+  display: inline-block;
+}
+.header-outter .header-inner .links ul li a {
+  font-size: .8rem;
+  text-decoration: none;
+  color: inherit;
+  margin: 0 1em;
+}
+.icon-2x {
+  font-size: 2em;
+}
