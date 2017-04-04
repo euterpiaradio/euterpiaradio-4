@@ -12,9 +12,11 @@ GitHub Theme URI: https://github.com/euterpiaradio/euterpiaradio-4
 GitHub Branch: master
 */
 html {
-  font-family: Poppins;
+  font-family: "PT Serif";
   font-size: 14px;
   font-weight: 300;
+  color: #383838;
+  background-color: white;
 }
 *,
 *:before,
@@ -22,10 +24,15 @@ html {
   font-family: inherit;
   font-weight: inherit;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .header-outter {
   background-color: red;
 }
 .header-outter .header-inner {
+  font-family: 'Poppins';
   max-width: 700px;
   margin: 0 auto;
   padding: 0 40px;
@@ -57,11 +64,37 @@ html {
   display: inline-block;
 }
 .header-outter .header-inner .links ul li a {
-  font-size: .8rem;
-  text-decoration: none;
-  color: inherit;
-  margin: 0 1em;
+  font-size: 1rem;
+  margin: 0 .5em;
 }
-.icon-2x {
-  font-size: 2em;
+.content-outter {
+  margin: 1rem 0;
+}
+.content-outter .content-inner {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+.content-outter .content-inner article {
+  margin: 2rem 0;
+  border-bottom: 1px solid lightgray;
+}
+.content-outter .content-inner article header {
+  font-family: 'PT Sans';
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+.content-outter .content-inner article .thumbnail {
+  margin-top: 1rem;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  background-size: cover;
+}
+.content-outter .content-inner article .content {
+  font-size: 1.3rem;
+  line-height: 1.5em;
+}
+.content-outter .content-inner article footer {
+  margin: 1rem 0;
 }

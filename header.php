@@ -17,3 +17,5 @@
             </div>
         </div>
     </div>
+    <div class="content-outter">
+        <div class="content-inner">
