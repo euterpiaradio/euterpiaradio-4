@@ -10,7 +10,7 @@
 <body <?php body_class() ?>>
     <div class="header-outter">
         <div class="header-inner">
-            <div class="brand">Euterpia Radio</div>
+            <div class="brand"><a href="<?php echo get_home_url(); ?>">Euterpia Radio</a></div>
             <div class="links">
                 <?php wp_nav_menu( array( 'theme_location' => 'social-links', 'container_class' => 'saf-container saf-alignnone', 'menu_class' => 'saf-links' ) ); ?>
                 <?php wp_nav_menu( array( 'theme_location' => 'directory-links', 'container_class' => 'saf-container saf-alignnone', 'menu_class' => 'saf-links' ) ); ?>

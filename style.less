@@ -12,15 +12,33 @@ GitHub Theme URI: https://github.com/euterpiaradio/euterpiaradio-4
 GitHub Branch: master
 */
 
-@accent-color: red;
+@accent-color: #bb1e10;
 @white: white;
 @black: rgb(56, 56, 56);
+@grey: lightgrey;
 
-@defaut-font-size: 14px;
+@medium-size: 630px;
+@small-size: 490px;
+@very-small-size: 400px;
+
+.inner() {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 10px;
+    @media screen and (min-width: @medium-size) {
+        padding: 0 40px;
+    }
+}
 
 html {
     font-family: "PT Serif";
-    font-size: @defaut-font-size;
+    font-size: 10px;
+    @media (min-width: @small-size) {
+        font-size: 12px;
+    }
+    @media (min-width: @medium-size) {
+        font-size: 14px;
+    }
     font-weight: 300;
     color: @black;
     background-color: @white;
@@ -41,17 +59,21 @@ a {
 .header-outter {
     background-color: @accent-color;
     .header-inner {
+        .inner();
         font-family: 'Poppins';
-        max-width: 700px;
-        margin: 0 auto;
-        padding: 0 40px;
         color: @white;
         display: flex;
         flex-direction: column;
         align-items: center;
         .brand {
             font-weight: 700;
-            font-size: 5rem;
+            font-size: 3rem;
+            @media screen and (min-width: @very-small-size) {
+                font-size: 4rem;
+            }
+            @media screen and (min-width: @small-size) {
+                font-size: 5rem;
+            }
             margin: 1rem 0;
         }
         .links {
@@ -81,13 +103,14 @@ a {
 
 .content-outter {
     margin: 1rem 0;
+    a {
+        color: @accent-color;
+    }
     .content-inner {
-        max-width: 700px;
-        margin: 0 auto;
-        padding: 0 40px;
+        .inner();
         article {
             margin: 2rem 0;
-            border-bottom: 1px solid lightgray;
+            border-bottom: 1px solid @grey;
             header {
                 font-family: 'PT Sans';
                 font-size: 2.6rem;
@@ -108,5 +131,35 @@ a {
                 margin: 1rem 0;
             }
         }
+    }
+}
+
+nav.pagination {
+    margin-bottom: 2rem;
+    .screen-reader-text {
+        display: none;
+    }
+    .nav-links {
+        & > * {
+            display: inline-block;
+            width: 2em;
+            text-align: center;
+            padding: 6px 0;
+            background-color: @black;
+            font-weight: 700;
+            color: @white;
+            font-family: 'Poppins';
+        }
+        .current {
+            background-color: @accent-color;
+        }
+    }
+}
+
+.footer-outter {
+    background-color: @black;
+    color: @white;
+    .footer-inner {
+        .inner();
     }
 }

@@ -13,10 +13,20 @@ GitHub Branch: master
 */
 html {
   font-family: "PT Serif";
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 300;
   color: #383838;
   background-color: white;
+}
+@media (min-width: 490px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (min-width: 630px) {
+  html {
+    font-size: 14px;
+  }
 }
 *,
 *:before,
@@ -29,22 +39,37 @@ a {
   color: inherit;
 }
 .header-outter {
-  background-color: red;
+  background-color: #bb1e10;
 }
 .header-outter .header-inner {
-  font-family: 'Poppins';
   max-width: 700px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 10px;
+  font-family: 'Poppins';
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 630px) {
+  .header-outter .header-inner {
+    padding: 0 40px;
+  }
+}
 .header-outter .header-inner .brand {
   font-weight: 700;
-  font-size: 5rem;
+  font-size: 3rem;
   margin: 1rem 0;
+}
+@media screen and (min-width: 400px) {
+  .header-outter .header-inner .brand {
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 490px) {
+  .header-outter .header-inner .brand {
+    font-size: 5rem;
+  }
 }
 .header-outter .header-inner .links {
   margin-bottom: 1rem;
@@ -71,14 +96,22 @@ a {
 .content-outter {
   margin: 1rem 0;
 }
+.content-outter a {
+  color: #bb1e10;
+}
 .content-outter .content-inner {
   max-width: 700px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 10px;
+}
+@media screen and (min-width: 630px) {
+  .content-outter .content-inner {
+    padding: 0 40px;
+  }
 }
 .content-outter .content-inner article {
   margin: 2rem 0;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid lightgrey;
 }
 .content-outter .content-inner article header {
   font-family: 'PT Sans';
@@ -98,4 +131,37 @@ a {
 }
 .content-outter .content-inner article footer {
   margin: 1rem 0;
+}
+nav.pagination {
+  margin-bottom: 2rem;
+}
+nav.pagination .screen-reader-text {
+  display: none;
+}
+nav.pagination .nav-links > * {
+  display: inline-block;
+  width: 2em;
+  text-align: center;
+  padding: 6px 0;
+  background-color: #383838;
+  font-weight: 700;
+  color: white;
+  font-family: 'Poppins';
+}
+nav.pagination .nav-links .current {
+  background-color: #bb1e10;
+}
+.footer-outter {
+  background-color: #383838;
+  color: white;
+}
+.footer-outter .footer-inner {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+@media screen and (min-width: 630px) {
+  .footer-outter .footer-inner {
+    padding: 0 40px;
+  }
 }

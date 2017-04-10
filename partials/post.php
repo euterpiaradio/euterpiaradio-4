@@ -1,6 +1,10 @@
 <article <?php post_class(); ?>>
     <header>
+        <?php if ( is_single() ): ?>
+        <?php the_title(); ?>
+        <?php else: ?>
         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+        <?php endif; ?>
     </header>
     <?php if ( has_post_thumbnail() ): ?>
     <a href="<?php the_permalink(); ?>">
@@ -9,7 +13,7 @@
     </a>
     <?php endif; ?>
     <div class="content">
-        <?php the_excerpt(); ?>
+        <?php is_single() ? the_content() : the_excerpt(); ?>
     </div>
     <footer>
         <?php the_date(); ?>
