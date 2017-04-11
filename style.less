@@ -95,6 +95,13 @@ a {
                         margin: 0 .5em;
                         font-family: 'Poppins';
                     }
+                    &.saf-miro,
+                    &.saf-tunein {
+                        display: none;
+                        @media screen and (min-width: @very-small-size) {
+                            display: inline-block;
+                        }
+                    }
                 }
             }
         }

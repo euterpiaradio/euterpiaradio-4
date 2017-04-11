@@ -93,6 +93,16 @@ a {
   margin: 0 .5em;
   font-family: 'Poppins';
 }
+.header-outter .header-inner .links ul li.saf-miro,
+.header-outter .header-inner .links ul li.saf-tunein {
+  display: none;
+}
+@media screen and (min-width: 400px) {
+  .header-outter .header-inner .links ul li.saf-miro,
+  .header-outter .header-inner .links ul li.saf-tunein {
+    display: inline-block;
+  }
+}
 .content-outter {
   margin: 1rem 0;
 }
