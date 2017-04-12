@@ -30,7 +30,7 @@ Faire de "Blog" la catégorie par défaut
 
 Supprimer les catégories inutiles
 
-Inclure les podcasts dans le blog
+Inclure les podcasts dans le blog et désactiver l'intégration des podcasts dans les articles
 
 Ajouter ceci dans .htaccess :
 ```
