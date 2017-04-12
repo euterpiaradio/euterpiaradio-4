@@ -166,7 +166,48 @@ nav.pagination {
 .footer-outter {
     background-color: @black;
     color: @white;
+    padding: 2rem 0;
+    line-height: 1.5em;
+    font-family: 'Poppins';
     .footer-inner {
         .inner();
+        display: flex;
+        flex-direction: column;
+        .license {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            & > * {
+                margin-bottom: 1rem;
+            }
+        }
+        .searchbox {
+            font-size: 1.1rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid spin(@grey, 180);
+            form {
+                display: flex;
+                & > * {
+                    font-family: inherit;
+                    padding: 10px;  
+                    border: none;
+                    outline: none;
+                    box-shadow: none;
+                }
+                label {
+                    padding-left: 0;
+                }
+                #s {
+                    flex-grow: 1;
+                }
+
+                #searchsubmit {
+                    background: @accent-color;
+                    color: @white;
+                    font-weight: 700;
+                }
+            }
+        }
     }
 }

@@ -164,14 +164,50 @@ nav.pagination .nav-links .current {
 .footer-outter {
   background-color: #383838;
   color: white;
+  padding: 2rem 0;
+  line-height: 1.5em;
+  font-family: 'Poppins';
 }
 .footer-outter .footer-inner {
   max-width: 700px;
   margin: 0 auto;
-  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
 }
 @media screen and (min-width: 630px) {
-  .footer-outter .footer-inner {
-    padding: 0 40px;
-  }
+}
+.footer-outter .footer-inner .license {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-outter .footer-inner .license > * {
+  margin-bottom: 1rem;
+}
+.footer-outter .footer-inner .searchbox {
+  font-size: 1.1rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #d3d3d3;
+}
+.footer-outter .footer-inner .searchbox form {
+  display: flex;
+}
+.footer-outter .footer-inner .searchbox form > * {
+  font-family: inherit;
+  padding: 10px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.footer-outter .footer-inner .searchbox form label {
+  padding-left: 0;
+}
+.footer-outter .footer-inner .searchbox form #s {
+  flex-grow: 1;
+}
+.footer-outter .footer-inner .searchbox form #searchsubmit {
+  background: #bb1e10;
+  color: white;
+  font-weight: 700;
 }
