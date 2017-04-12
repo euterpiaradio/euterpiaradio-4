@@ -44,7 +44,6 @@ a {
 .header-outter .header-inner {
   max-width: 700px;
   margin: 0 auto;
-  padding: 0 10px;
   font-family: 'Poppins';
   color: white;
   display: flex;
@@ -52,9 +51,6 @@ a {
   align-items: center;
 }
 @media screen and (min-width: 630px) {
-  .header-outter .header-inner {
-    padding: 0 40px;
-  }
 }
 .header-outter .header-inner .brand {
   font-weight: 700;
@@ -112,12 +108,8 @@ a {
 .content-outter .content-inner {
   max-width: 700px;
   margin: 0 auto;
-  padding: 0 10px;
 }
 @media screen and (min-width: 630px) {
-  .content-outter .content-inner {
-    padding: 0 40px;
-  }
 }
 .content-outter .content-inner article {
   margin: 2rem 0;
