@@ -13,7 +13,7 @@
     </a>
     <?php endif; ?>
     <div class="content">
-        <?php is_single() ? the_content() : the_excerpt(); ?>
+        <?php is_single() || is_page() ? the_content() : the_excerpt(); ?>
     </div>
     <footer>
         <?php the_date(); ?>
