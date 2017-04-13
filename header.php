@@ -17,5 +17,10 @@
             </div>
         </div>
     </div>
+    <div class="navigation-outter">
+        <div class="navigation-inner">
+            <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => 'navigation-container', 'menu_class' => 'navigation-links' ) ); ?>
+        </div>
+    </div>
     <div class="content-outter">
         <div class="content-inner">

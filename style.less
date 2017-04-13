@@ -101,8 +101,53 @@ a {
                         @media screen and (min-width: @very-small-size) {
                             display: inline-block;
                         }
+                    }   
+                }
+            }
+        }
+    }
+}
+
+.navigation-outter {
+    background-color: @accent-color;
+    border-top: 1px solid darken(@accent-color, 10%);
+    border-bottom: 1px solid darken(@accent-color, 10%);
+    .navigation-inner {
+        .inner();
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            color: @white;
+            font-family: 'Poppins';
+            line-height: 2rem;
+            font-size: 1rem;
+
+            li {
+                border-width: 0 1px 0 0;
+                border-style: solid;
+                border-color:  darken(@accent-color, 10%);
+
+                &.current-menu-item {
+                    a {
+                        background-color: darken(@accent-color, 5%);
                     }
                 }
+
+                a {
+                    padding: 0 1rem;
+                    display: block;
+                    font-weight: 550;
+
+                    &:hover {
+                        background-color: darken(@accent-color, 15%);
+                    }
+                }
+            }
+
+            & > li:first-child {
+                border-width: 0 1px 0 1px;
             }
         }
     }
