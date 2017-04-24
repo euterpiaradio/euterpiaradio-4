@@ -1,7 +1,8 @@
-magick -background #BB1E10 -fill white -font "Poppins-Bold" -pointsize 250 -interline-spacing -150 label:"Euterpia Radio" -trim -gravity center -extent 2300x875 -resize 820x312 facebook-main.png
-magick -background #BB1E10 -fill white -font "Poppins-Bold" -pointsize 250 -interline-spacing -150 label:"Euterpia\nRadio" -trim -gravity center -extent 1300x1300 -resize 320x320 facebook-vignette.png
-magick -background #BB1E10 -fill white -font "Poppins-Bold" -pointsize 250 -interline-spacing -150 label:"Euterpia Radio" -trim -gravity center -extent 3807x2141 -resize 2560x1440 youtube-main.png
-magick -background #BB1E10 -fill white -font "Poppins-Bold" -pointsize 250 -interline-spacing -150 label:"Euterpia\nRadio" -trim -gravity center -extent 1300x1300 -resize 576x576 google-vignette.png
-magick -background #BB1E10 -fill white -font "Poppins-Bold" -pointsize 250 -interline-spacing -150 label:"Euterpia Radio" -trim -gravity center -extent 2300x875 -resize 1903 twitter-main.png
-magick -background #BB1E10 -fill white -font "Poppins-Bold" -pointsize 250 -interline-spacing -150 label:"Euterpia\nRadio" -trim -gravity center -extent 1300x1300 -resize 400x400 twitter-vignette.png
-magick -background #BB1E10 -fill white -font "Poppins-Bold" -pointsize 250 -interline-spacing -150 label:"Euterpia Radio" -trim -gravity center -extent 2300x1295 -resize 1084 gplus-main.png
+convert -background "#BB1E10" -fill white -font "Poppins-Bold" -pointsize 250 -interline-spacing -150 label:"Euterpia Radio" -trim -gravity center -extent 2300x875 -resize 820x312 facebook-main.png
+convert -background "#BB1E10" -fill white -font "Poppins-Bold" -pointsize 250 -interline-spacing -150 label:"Euterpia\nRadio" -trim -gravity center -extent 1300x1300 -resize 320x320 facebook-vignette.png
+convert -background "#BB1E10" -fill white -font "Poppins-Bold" -pointsize 250 -interline-spacing -150 label:"Euterpia Radio" -trim -gravity center -extent 3807x2141 -resize 2560x1440 youtube-main.png
+convert -background "#BB1E10" -fill white -font "Poppins-Bold" -pointsize 250 -interline-spacing -150 label:"Euterpia\nRadio" -trim -gravity center -extent 1300x1300 -resize 576x576 google-vignette.png
+convert -background "#BB1E10" -fill white -font "Poppins-Bold" -pointsize 250 -interline-spacing -150 label:"Euterpia Radio" -trim -gravity center -extent 2300x875 -resize 1903 twitter-main.png
+convert -background "#BB1E10" -fill white -font "Poppins-Bold" -pointsize 250 -interline-spacing -150 label:"Euterpia\nRadio" -trim -gravity center -extent 1300x1300 -resize 400x400 twitter-vignette.png
+convert -background "#BB1E10" -fill white -font "Poppins-Bold" -pointsize 250 -interline-spacing -150 label:"Euterpia Radio" -trim -gravity center -extent 2300x1295 -resize 1084 gplus-main.png
+convert -background "#BB1E10" -fill white -font "Poppins-Bold" -pointsize 250 -interline-spacing -150 label:"Euterpia\nRadio\nEpisode 888" -trim -gravity center -extent 1800x1800 cover-art.png

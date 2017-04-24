@@ -16,7 +16,11 @@
         <?php is_single() || is_page() ? the_content() : the_excerpt(); ?>
     </div>
     <footer>
-        <?php the_date(); ?>
+        <div class="date"><p><?php echo get_the_date(); ?></p></div>
     </footer>
 </article>
 <?php
+// If comments are open or we have at least one comment, load up the comment template.
+if ( comments_open() || get_comments_number() ) :
+    comments_template();
+endif;
