@@ -1,2 +1,7 @@
 ﻿.vscode/
 logos/*.png
+/node_modules/
+/.idea/
+/euterpiaradio-4.iml
+style.css.map
+style.css
