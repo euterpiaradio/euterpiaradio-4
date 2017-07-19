@@ -262,8 +262,11 @@ nav.pagination {
   }
 }
 
-section.chart {
+section#chart {
   font-family: 'PT Sans', sans-serif;
+  a {
+    color: inherit;
+  }
   header {
     font-size: 2.6rem;
     font-weight: 700;
@@ -274,6 +277,7 @@ section.chart {
     font-family: 'Roboto Condensed', sans-serif;
     header {
       margin-bottom: 1rem;
+      font-size: 1.8rem;
       color: @black;
     }
     table {
@@ -297,17 +301,17 @@ section.chart {
       tbody tr:nth-child(even) {
         background-color: lighten(@grey, 10%);
       }
-      tr.up {
+      tbody tr.up {
         color: green;
       }
-      tr.down {
+      tbody tr.down {
         color: darkred;
       }
-      tr.best {
+      tbody tr.best {
         background-color: green;
         color: white;
       }
-      tr.worst {
+      tbody tr.worst {
         background-color: darkred;
         color: white;
       }

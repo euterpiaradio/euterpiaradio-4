@@ -24,6 +24,6 @@
     };
 
     //language=JQuery-CSS
-    $('section.chart article').chartify();
+    $('section#chart article').chartify();
 
 }(window.jQuery));
