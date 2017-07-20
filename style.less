@@ -3,7 +3,7 @@ Theme Name: Euterpia Radio 4
 Theme URI: https://github.com/euterpiaradio/euterpiaradio-4
 Author: Yannick Mauray
 Author URI: https://frenchguy.ch/
-Description: Le 4ème thème WordPress pour le site d'Euterpia Radio
+Description: Le 4ème thème WordPress pour le site euterpiaradio.ch
 Version: 1.0.2
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -274,7 +274,13 @@ section#chart {
     color: @accent-color;
   }
   article {
-    font-family: 'Roboto Condensed', sans-serif;
+    &#weekly-chart {
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+    &#explications, &#avertissement {
+      font-family: 'PT Serif', serif;
+      font-size: 1.1rem;
+    }
     header {
       margin-bottom: 1rem;
       font-size: 1.8rem;
